@@ -1,6 +1,6 @@
 <template>
   <ul class="list">
-    <li :class="item.class" v-for="item in data.todoList" :key="item">
+    <li :class="item.class" v-for="item in data.todoList" :key="item.text">
       <div>{{ item.text }} {{ item.class }}</div>
     </li>
   </ul>
