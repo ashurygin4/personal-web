@@ -1,0 +1,8 @@
+@font-face {
+  font-family: Sora;
+  src:
+    local('Sora-Variable'),
+    url('/public/fonts/Sora-VariableFont_wght.woff2') format('woff2 supports variations'),
+    url('/public/fonts/Sora-VariableFont_wght.woff2') format('woff2-variations');
+  font-display: swap;
+}
