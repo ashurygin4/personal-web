@@ -1,0 +1,11 @@
+.header {
+  padding-block-start: 24px;
+}
+
+.logo {
+  max-inline-size: 40px;
+}
+
+.navigation {
+  display: flex;
+}

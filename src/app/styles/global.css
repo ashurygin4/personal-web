@@ -40,3 +40,8 @@ button {
 a {
   text-decoration: none;
 }
+
+.container {
+  max-inline-size: 100%;
+  padding-inline: 80px;
+}

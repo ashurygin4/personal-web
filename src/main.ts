@@ -1,4 +1,4 @@
 import { createApp } from 'vue'
-import App from './app/App.vue'
+import HomePage from './pages/HomePage.vue'
 
-createApp(App).mount('#app')
+createApp(HomePage).mount('#app')
