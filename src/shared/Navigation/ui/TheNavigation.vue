@@ -1,5 +1,5 @@
 <template>
-  <ul>
+  <ul :class="styles.navigation">
     <li>Navigation</li>
   </ul>
 </template>
