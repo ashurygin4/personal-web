@@ -2,7 +2,7 @@
   <header :class="styles.header">
     <div class="container">
       <img :class="styles.logo" src="/images/logo.svg" alt="Personal" />
-      <TheNavigation />
+      <TheNavigation :nav="data.navigation" />
       <button>Resume</button>
     </div>
   </header>
@@ -17,6 +17,9 @@ export default {
     return {
       styles,
     }
+  },
+  props: {
+    data: Object,
   },
   components: {
     TheNavigation,

@@ -1,6 +1,9 @@
 <template>
-  <TheHeader :nav="data.header.navigation" />
-  <main></main>
+  <TheHeader :data="data.header" />
+  <main>
+    <TheSection> default section </TheSection>
+    <TheSection theme="dark">dark section</TheSection>
+  </main>
   <footer></footer>
 </template>
 
@@ -9,6 +12,7 @@ import '@/app/styles/fonts.css'
 import '@/app/styles/global.css'
 import { data } from '@/shared/data/HomeData.ts'
 import TheHeader from '@/widgets/Header/ui/TheHeader.vue'
+import TheSection from '@/shared/Section/ui/TheSection.vue'
 
 export default {
   data() {
@@ -18,6 +22,7 @@ export default {
   },
   components: {
     TheHeader,
+    TheSection,
   },
 }
 </script>

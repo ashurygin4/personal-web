@@ -1,7 +1,11 @@
 <template>
-  <ul :class="styles.navigation">
-    <li>Navigation</li>
-  </ul>
+  <nav :class="styles.navigation">
+    <ul :class="styles['navigation-list']">
+      <li :class="styles['navigation-item']" v-for="item in nav" :key="item.id">
+        <a :class="styles['navigation-link']" :href="item.link">{{ item.text }}</a>
+      </li>
+    </ul>
+  </nav>
 </template>
 
 <script lang="ts">
@@ -12,6 +16,9 @@ export default {
     return {
       styles,
     }
+  },
+  props: {
+    nav: Array,
   },
 }
 </script>

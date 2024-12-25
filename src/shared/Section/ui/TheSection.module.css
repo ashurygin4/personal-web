@@ -1,0 +1,20 @@
+.section {
+  padding-block: 60px;
+}
+
+.container {
+  max-inline-size: 100%;
+  padding-inline: 80px;
+}
+
+.dark {
+  background-color: #000000;
+}
+
+.dark * {
+  color: #ffffff;
+}
+
+.padding-block-24 {
+  padding-block: 24px;
+}
