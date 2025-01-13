@@ -8,11 +8,11 @@
 }
 
 .dark {
-  background-color: #000000;
+  background-color: var(--primary-black);
 }
 
 .dark * {
-  color: #ffffff;
+  color: var(--primary-white);
 }
 
 .padding-block-24 {

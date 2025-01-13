@@ -1,5 +1,14 @@
 <template>
-  <button><slot></slot></button>
+  <button
+    :class="[
+      styles.button,
+      {
+        [styles.medium]: size === 'medium',
+      },
+    ]"
+  >
+    <slot></slot>
+  </button>
 </template>
 
 <script lang="ts">
@@ -12,9 +21,8 @@ export default {
     }
   },
   props: {
-    theme: {
+    size: {
       type: String,
-      default: 'white',
     },
   },
 }
